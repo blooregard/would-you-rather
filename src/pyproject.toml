@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "would-you-rather"
+version = "0.1.0"
+description = "A series of services to see who you are most like"
+authors = ["Ben Rector <BRector@aimconsulting.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "would_you_rather"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.87.0"
+uvicorn = "^0.20.0"
+sqlalchemy = "^1.4.44"
+psycopg2-binary = "^2.9.5"
+alembic = "^1.8.1"
+pydantic = "^1.10.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+reorder-python-imports = "^3.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
